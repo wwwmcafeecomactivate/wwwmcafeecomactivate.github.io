@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* border: 1px solid black; */
+}
+
+#highlighttext{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #C01818;
+}
+
+.graybg{
+    background-color: #F2F2F2;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    height: 2px; /* Adjust thickness */
+    background-color: #AB1717; /* Color of the line */
+    border: none; /* Remove any default borders */
+    opacity: 1; /* Ensure full opacity */
+}
+
+#logotext{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: #C01818;
+}
+
+/* header styling  */
+
+.mcafeelogo {
+    height: 5vh;
+    width: auto;
+    margin-right: 10px; /* Adds space between the logo and text */
+}
+
+#logotextmain {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    color: #C01818;
+    font-size: 5vh;
+    margin: 0;
+}
+
+
+/* hero section styling  */
+
+.herodiv{
+    background-image: url(../images/herobg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    z-index: 1;
+}
+.herodiv::after{
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.heroimage{
+    height: 60vh;
+}
+
+.heroheading{
+    color: white;
+}
+
+#herologotext{
+    font-weight: 800;
+}
+
+.activatebtn{
+    border: 1px solid white;
+    background-color: #AB1717;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.activatebtn:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: #AB1717;
+}
+
+/* why mcafee section  */
+
+.awardimgdiv{
+    display: flex;
+    justify-content: center;
+}
+.awardimg{
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.awardimgdiv2{
+    display: flex;
+    justify-content: center;
+}
+.awardimg2{
+    height: 40vh;
+}
+
+/* plan section styling */
+
+.plansul{
+    line-height: 3;
+}
+
+.plandiv{
+    border: 2px solid #AB1717;
+    border-radius: 15px;
+}
+
+/* Android section styling  */
+
+.androiddiv{
+    background-color: white;
+    border-radius: 20px;
+}
+.androidimg{
+    height: 60vh;
+}
+
+.androidul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.bulletpoint{
+    height: 3vh;
+}
+
+/* Window section styling  */
+
+.windowdiv{
+    background-color: white;
+    border-radius: 20px;
+    padding-right: 0;
+}
+
+.windowimg{
+    height: 50vh;
+    overflow: hidden;
+}
+
+.windowimgres{
+    display: none;
+}
+
+/* troubleshooting styling  */
+.collapsible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.collapsible span {
+    margin-left: auto;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.collapsible.active span {
+    transform: rotate(45deg);
+}
+
+.content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+}
+
+
+/* footer section styling  */
+
+.footer{
+    background-color: #D1D5DB;
+}
+
+@media screen and (max-width: 700px) {
+
+    *{
+        /* overflow: hidden; */
+        /* border: 1px solid black; */
+    }
+
+    /* header styling  */
+
+.mcafeelogodiv{
+    /* border: 1px solid green; */
+}
+.mcafeelogo{
+height: 3vh;
+
+}
+
+#logotextmain{
+    font-size: 3vh;
+    margin-top: -2px;
+}
+
+    /* hero section styling  */
+
+.herodiv{
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    /* height: 80vh; */
+}
+
+.heroimage{
+    height: 40vh;
+}
+
+/* why mcafee section  */
+
+.awardimg{
+    height: 25vh;
+    border-radius: 20px;
+}
+
+.awardpt2{
+    flex-direction: column;
+}
+
+.awardimg2{
+    height: 30vh;
+}
+
+/* plan section styling */
+
+.allplansdiv{
+    padding: 1rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.plandiv{
+}
+
+/* Android section styling  */
+.android{
+    padding: 1.5rem!important;
+}
+.androiddiv{
+    flex-direction: column;
+    gap: 2rem;
+}
+.androidimg{
+    height: 50vh;
+}
+
+.androidul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.androidul li{
+    /* border: 2px solid greenyellow; */
+    
+}
+
+.bulletpoint{
+    height: 2.5vh;
+    /* border: 2px solid red; */
+    
+}
+
+/* Window section styling  */
+
+.windowdiv{
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.windowimg{
+    display: none;
+}
+
+.windowimgdiv{
+    justify-content: center!important;
+}
+
+.windowimgres{
+    display: block;
+    height: 30vh;
+}
+
+}
